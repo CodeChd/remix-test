@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "2058833702e48ffac78da4e046a2046e"
+name = "remix-chat"
+handle = "remix-chat-45"
+application_url = "https://illinois-step-heather-eric.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-9f536d5a.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://illinois-step-heather-eric.trycloudflare.com/auth/callback",
+  "https://illinois-step-heather-eric.trycloudflare.com/auth/shopify/callback",
+  "https://illinois-step-heather-eric.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
